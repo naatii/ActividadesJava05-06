@@ -3,9 +3,11 @@ package daw2a.Java_ProgramaBasic_05_0;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ejercicios_05_0 {
-    static final int MAXPERSONAS = 4;
-    static final int NUM_MESAS = 10;
+public class GestionMesas {
+    public static final int MAXPERSONAS = 4;
+    public static final int NUM_MESAS = 10;
+    public static final int SALIDA_PROGRAMA = -1;
+
     public static void ejercicio15() {
 
         int[] mesas = new int[NUM_MESAS];
@@ -13,10 +15,9 @@ public class Ejercicios_05_0 {
         int grupo;
         while (true) {
             imprimirEstadoMesas(mesas);
-
             grupo = entrada("\n¿Cuántos son? (Introduzca -1 para salir del programa): ");
 
-            if (grupo == -1) {
+            if (grupo == SALIDA_PROGRAMA) {
                 imprimirMensaje("Gracias por usar el programa. ¡Hasta luego!");
                 break;
             }
@@ -42,7 +43,7 @@ public class Ejercicios_05_0 {
         }
     }
 
-    public static void inicializarMesas(int[] mesas){
+    public static void inicializarMesas(int[] mesas) {
         for (int i = 0; i < mesas.length; i++) {
             mesas[i] = obtenerNumeroAleatorio(0, MAXPERSONAS);
         }
@@ -79,7 +80,6 @@ public class Ejercicios_05_0 {
         return -1;
     }
 
-
     public static int entrada(String textoEntrada) {
         Scanner sc = new Scanner(System.in);
         System.out.println(textoEntrada);
@@ -89,8 +89,5 @@ public class Ejercicios_05_0 {
     public static int obtenerNumeroAleatorio(int min, int max) {
         Random random = new Random();
         return random.nextInt((max - min) + 1) + min;
-    }
-
-    public static void ejercicio16() {
     }
 }
