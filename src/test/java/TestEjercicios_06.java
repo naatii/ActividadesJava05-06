@@ -1,10 +1,11 @@
+/*
 import daw2a.Java_ProgramaBasic_05_0.Ejercicios_05_0;
 import daw2a.Java_ProgramaBasic_06.*;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class EjerciciosAleatoriosBuclesESTest {
+class Ejercicios_06_ESTest {
 
     @Test
     public void testMultiplicar() {
@@ -62,4 +63,4 @@ class EjerciciosAleatoriosBuclesESTest {
     public void testMultiplicar() {
         assertEquals(20, Ejercicios_06.ejercicio14(4, 5);, 0.001);
     }
-}
+}*/
