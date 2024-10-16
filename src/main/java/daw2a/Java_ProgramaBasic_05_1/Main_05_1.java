@@ -6,6 +6,7 @@ public class Main_05_1 {
     public static void main(String[] args) {
 
         Matriz1.imprimirMatriz(Matriz1.inicializarMatriz());
-        /*Matriz2.ejercicio2();*/
+
+        Matriz2.ejercicio2();
     }
 }

@@ -6,5 +6,6 @@ public class Main_05_0 {
     public static void main(String[] args) {
         GestionMesas.ejercicio15();
         /*Ejercicios_05_0.ejercicio16();*/
+        GestorMultiplos.ejercicio16();
     }
 }
